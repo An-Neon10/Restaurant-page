@@ -1,0 +1,23 @@
+#content {
+  display: grid;
+  height: calc(100% - 80px);
+  place-items: center;
+}
+.Home-block {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1.2rem;
+  width: min(100%, 550px);
+}
+.Home-paragraph {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.Home-image {
+  width: min(400px, 100%);
+  height: 400px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}

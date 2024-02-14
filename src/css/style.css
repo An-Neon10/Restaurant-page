@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  font-family: Roboto, sans-serif;
+}
+body {
+  background: url("../images/pexels-life-of-pix-67468.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+header {
+  background: #000;
+  height: 5rem;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+header,
+nav {
+  display: flex;
+}
+nav {
+  gap: 2rem;
+}
+.Button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.4rem;
+  transition: transform 0.3s;
+}
+.Button--link {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.Button:hover {
+  transform: translateY(-10%);
+}
