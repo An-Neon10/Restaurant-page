@@ -3,14 +3,17 @@
   height: calc(100% - 80px);
   place-items: center;
 }
-.Home-block {
+.Home-block,
+.About-block,
+.Menu-block {
   background-color: rgba(0, 0, 0, 0.85);
   padding: 1.2rem;
   width: min(100%, 550px);
+  animation: 0.4s forwards bottom-to-top;
 }
+
 .Home-paragraph {
   color: #fff;
-  font-size: 1.3rem;
   padding: 1rem 0;
   text-align: center;
 }
@@ -20,4 +23,29 @@
   object-fit: contain;
   display: block;
   margin: 0 auto;
+}
+
+.Menu-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.8rem;
+}
+
+.Menu-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.8rem;
+}
+
+.Menu-item img {
+  width: 250px;
+  height: 250px;
+}
+
+@keyframes bottom-to-top {
+  from {
+    transform: translateY(2rem);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

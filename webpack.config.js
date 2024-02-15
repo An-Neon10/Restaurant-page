@@ -31,7 +31,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
         type: "asset/resource",
         use: [
           {
@@ -43,7 +43,7 @@ module.exports = {
               },
               // optipng.enabled: false will disable optipng
               optipng: {
-                enabled: false,
+                enabled: true,
               },
               pngquant: {
                 quality: [0.65, 0.9],

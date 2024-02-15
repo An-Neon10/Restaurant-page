@@ -3,17 +3,23 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 body,
 html {
   font-family: Roboto, sans-serif;
 }
 body {
-  background: url("../images/pexels-life-of-pix-67468.jpg");
+  background: url("../images/restaurant.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
+
+p {
+  font-size: clamp(1.6rem, 2vw + 1rem, 1.25rem);
+}
+
 header {
   background: #000;
   height: 5rem;
@@ -39,8 +45,13 @@ nav {
 }
 .Button--link {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: clamp(1.6rem, 2vw + 1rem, 1.25rem);
 }
+
+.Button--active {
+  border-bottom: 0.3rem solid white;
+}
+
 .Button:hover {
   transform: translateY(-10%);
 }
