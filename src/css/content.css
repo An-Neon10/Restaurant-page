@@ -29,6 +29,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 0.8rem;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .Menu-item {
